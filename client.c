@@ -35,7 +35,7 @@ int main(int argc, char *argv[]){
     connect(sockid, (struct sockaddr *)&server_addr, sizeof(server_addr));
 
     while (1) {
-        printf("Command ('exit'to quit) : ");
+        printf("Command ('exit' to quit) : ");
         bzero(buffer, BUFFER_SIZE);
         fgets(buffer, sizeof(buffer), stdin);
 
